@@ -17,6 +17,9 @@
 		DB8306DD2B569ACE00839708 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DB8306DC2B569ACE00839708 /* Alamofire */; };
 		DB8306DF2B569C8600839708 /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8306DE2B569C8600839708 /* Lotto.swift */; };
 		DB8306E22B56B35800839708 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DB8306E12B56B35800839708 /* Kingfisher */; };
+		DBF696002B56B82100C0A7FA /* Beer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF695FF2B56B82100C0A7FA /* Beer.storyboard */; };
+		DBF696022B56B83800C0A7FA /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF696012B56B83800C0A7FA /* BeerViewController.swift */; };
+		DBF696052B56B85C00C0A7FA /* BeerRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF696042B56B85C00C0A7FA /* BeerRandom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		DB8306CF2B56960500839708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB8306D92B569AB400839708 /* LottoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoAPIManager.swift; sourceTree = "<group>"; };
 		DB8306DE2B569C8600839708 /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
+		DBF695FF2B56B82100C0A7FA /* Beer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Beer.storyboard; sourceTree = "<group>"; };
+		DBF696012B56B83800C0A7FA /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
+		DBF696042B56B85C00C0A7FA /* BeerRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRandom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		DB8306C02B56960300839708 /* Network Practice */ = {
 			isa = PBXGroup;
 			children = (
+				DBF695FB2B56B7DA00C0A7FA /* Beer */,
 				DB8306E32B56B66400839708 /* Lotto */,
 				DB8306C12B56960300839708 /* AppDelegate.swift */,
 				DB8306C32B56960300839708 /* SceneDelegate.swift */,
@@ -115,6 +122,48 @@
 				DB8306D52B56968600839708 /* View */,
 			);
 			path = Lotto;
+			sourceTree = "<group>";
+		};
+		DBF695FB2B56B7DA00C0A7FA /* Beer */ = {
+			isa = PBXGroup;
+			children = (
+				DBF695FE2B56B7FA00C0A7FA /* Controller */,
+				DBF695FD2B56B7F400C0A7FA /* Model */,
+				DBF695FC2B56B7EF00C0A7FA /* View */,
+			);
+			path = Beer;
+			sourceTree = "<group>";
+		};
+		DBF695FC2B56B7EF00C0A7FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBF695FF2B56B82100C0A7FA /* Beer.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBF695FD2B56B7F400C0A7FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBF696032B56B84900C0A7FA /* Network */,
+				DBF696042B56B85C00C0A7FA /* BeerRandom.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBF695FE2B56B7FA00C0A7FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBF696012B56B83800C0A7FA /* BeerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBF696032B56B84900C0A7FA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF696002B56B82100C0A7FA /* Beer.storyboard in Resources */,
 				DB8306CE2B56960500839708 /* LaunchScreen.storyboard in Resources */,
 				DB8306CB2B56960500839708 /* Assets.xcassets in Resources */,
 				DB8306C92B56960300839708 /* Lotto.storyboard in Resources */,
@@ -198,8 +248,10 @@
 			files = (
 				DB8306C62B56960300839708 /* LottoViewController.swift in Sources */,
 				DB8306DF2B569C8600839708 /* Lotto.swift in Sources */,
+				DBF696022B56B83800C0A7FA /* BeerViewController.swift in Sources */,
 				DB8306C22B56960300839708 /* AppDelegate.swift in Sources */,
 				DB8306C42B56960300839708 /* SceneDelegate.swift in Sources */,
+				DBF696052B56B85C00C0A7FA /* BeerRandom.swift in Sources */,
 				DB8306DA2B569AB400839708 /* LottoAPIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
