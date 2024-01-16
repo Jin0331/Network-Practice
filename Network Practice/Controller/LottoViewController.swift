@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LottoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
