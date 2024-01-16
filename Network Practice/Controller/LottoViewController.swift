@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import Kingfisher
 
 class LottoViewController: UIViewController {
     
     @IBOutlet var lottoLabelSet: [UILabel]!
     @IBOutlet var numberPickerView: UIPickerView!
+    @IBOutlet var imageView: UIImageView!
     
     var lottoRequest : Lotto?
     var allLottoNumber = (1...1024).map{return String($0)}
@@ -21,6 +23,7 @@ class LottoViewController: UIViewController {
         
         
         configureProtocol()
+        configureViewDesign()
         numberPickerView.selectRow(Int(allLottoNumber[0])! - 1, inComponent: 0, animated: true)
         
     }
@@ -64,5 +67,11 @@ extension LottoViewController {
         for index in 0..<lottoLabelSet.count {
             lottoLabelSet[index].text = String(request.lottoNumberList[index])
         }
+    }
+    
+    func configureViewDesign() {
+        //image
+        let url = URL(string: "https://cdn.namdonews.com/news/photo/201803/464603_90575_5326.png")
+        imageView.kf.setImage(with: url)
     }
 }

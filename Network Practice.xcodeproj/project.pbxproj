@@ -16,6 +16,7 @@
 		DB8306DA2B569AB400839708 /* LottoAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8306D92B569AB400839708 /* LottoAPIManager.swift */; };
 		DB8306DD2B569ACE00839708 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DB8306DC2B569ACE00839708 /* Alamofire */; };
 		DB8306DF2B569C8600839708 /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8306DE2B569C8600839708 /* Lotto.swift */; };
+		DB8306E22B56B35800839708 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DB8306E12B56B35800839708 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8306E22B56B35800839708 /* Kingfisher in Frameworks */,
 				DB8306DD2B569ACE00839708 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +127,7 @@
 			name = "Network Practice";
 			packageProductDependencies = (
 				DB8306DC2B569ACE00839708 /* Alamofire */,
+				DB8306E12B56B35800839708 /* Kingfisher */,
 			);
 			productName = "Network Practice";
 			productReference = DB8306BE2B56960300839708 /* Network Practice.app */;
@@ -156,6 +159,7 @@
 			mainGroup = DB8306B52B56960300839708;
 			packageReferences = (
 				DB8306DB2B569ACE00839708 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DB8306E02B56B35800839708 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = DB8306BF2B56960300839708 /* Products */;
 			projectDirPath = "";
@@ -431,6 +435,14 @@
 				minimumVersion = 5.8.1;
 			};
 		};
+		DB8306E02B56B35800839708 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -438,6 +450,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DB8306DB2B569ACE00839708 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		DB8306E12B56B35800839708 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB8306E02B56B35800839708 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
