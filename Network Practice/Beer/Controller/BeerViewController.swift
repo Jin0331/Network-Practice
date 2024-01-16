@@ -29,17 +29,31 @@ class BeerViewController: UIViewController {
 
 
     }
-
+    @IBAction func refreshButton(_ sender: UIButton) {
+        beerRandomManager.callRequestBeerRandom { value in
+            self.beerRandomList = value
+            guard let t = self.beerRandomList else { return }
+            self.configureViewDesign(item: t)
+        }
+    }
+    
 }
 
 extension BeerViewController {
     func configureViewDesign(item : BeerRandoms) {
         
-        print(item[0].imageURL!)
-        let url = URL(string: item[0].imageURL!)
-        beerImageView.kf.setImage(with: url)
+//        print(item[0].imageURL!)
+        
+        if let imageUrl = item[0].imageURL {
+            let url = URL(string: imageUrl)
+            beerImageView.kf.setImage(with: url)
+        } else {
+            beerImageView.image = UIImage(systemName: "xmark.square.fill")
+        }
+        
         
         beerTitle.text = item[0].name
+        beerDescription.text = item[0].description
         
     }
 }
