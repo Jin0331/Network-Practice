@@ -64,9 +64,7 @@
 		DB8306C02B56960300839708 /* Network Practice */ = {
 			isa = PBXGroup;
 			children = (
-				DB8306D72B56969400839708 /* Controller */,
-				DB8306D62B56968D00839708 /* Model */,
-				DB8306D52B56968600839708 /* View */,
+				DB8306E32B56B66400839708 /* Lotto */,
 				DB8306C12B56960300839708 /* AppDelegate.swift */,
 				DB8306C32B56960300839708 /* SceneDelegate.swift */,
 				DB8306CA2B56960500839708 /* Assets.xcassets */,
@@ -107,6 +105,16 @@
 				DB8306D92B569AB400839708 /* LottoAPIManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		DB8306E32B56B66400839708 /* Lotto */ = {
+			isa = PBXGroup;
+			children = (
+				DB8306D72B56969400839708 /* Controller */,
+				DB8306D62B56968D00839708 /* Model */,
+				DB8306D52B56968600839708 /* View */,
+			);
+			path = Lotto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
