@@ -54,7 +54,15 @@ extension LottoViewController : UIPickerViewDelegate, UIPickerViewDataSource {
             self.lottoRequest = value
             print(self.lottoRequest)
             guard let t = self.lottoRequest else {return}
-            self.lottoLabelSet[0].text = String(t.drwtNo1)
+            self.setLottoNumber(request: t)
+        }
+    }
+}
+
+extension LottoViewController {
+    func setLottoNumber(request : Lotto) {
+        for index in 0..<lottoLabelSet.count {
+            lottoLabelSet[index].text = String(request.lottoNumberList[index])
         }
     }
 }
