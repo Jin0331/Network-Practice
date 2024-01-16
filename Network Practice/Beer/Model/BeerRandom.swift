@@ -5,11 +5,10 @@ import Foundation
 struct BeerRandom : Codable {
     let id: Int
     let name, firstBrewed, description: String
-    let imageURL: String
-    let abv: Double
-    let ibu, srm: Int
+    let imageURL: String?
+    let ibu, srm, abv: Double
 
-    enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey { // 카멜케이스로 강제변환.. 필요한듯???
         case id, name
         case firstBrewed = "first_brewed"
         case description

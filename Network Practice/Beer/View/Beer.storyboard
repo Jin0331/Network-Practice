@@ -16,40 +16,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="오늘은 이 맥주를 추천한다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1E-eL-MDp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘은 이 맥주를 추천한다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1E-eL-MDp">
                                 <rect key="frame" x="81" y="73" width="231" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHq-iL-7DC">
-                                <rect key="frame" x="81" y="123" width="240" height="217"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xao-e4-TLM">
-                                <rect key="frame" x="31" y="465" width="330" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exi-vD-3os">
+                                <rect key="frame" x="105" y="370" width="183" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="m6d-w4-MP0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06u-8c-E5O">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="요약" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xao-e4-TLM">
+                                <rect key="frame" x="31" y="409" width="330" height="168"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06u-8c-E5O">
                                 <rect key="frame" x="159" y="671" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="mtq-af-9sJ"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="맥주이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exi-vD-3os">
-                                <rect key="frame" x="105" y="374" width="183" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oHq-iL-7DC">
+                                <rect key="frame" x="76" y="119" width="240" height="217"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="xVI-yJ-ZYM"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j1E-eL-MDp" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="14" id="0Tf-8A-9Oj"/>
+                            <constraint firstItem="Xao-e4-TLM" firstAttribute="top" secondItem="exi-vD-3os" secondAttribute="bottom" constant="18" id="5x4-mB-1f6"/>
+                            <constraint firstItem="exi-vD-3os" firstAttribute="centerX" secondItem="06u-8c-E5O" secondAttribute="centerX" id="8dU-cN-Az4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oHq-iL-7DC" secondAttribute="trailing" constant="77" id="EUZ-JR-sTr"/>
+                            <constraint firstItem="exi-vD-3os" firstAttribute="centerX" secondItem="Xao-e4-TLM" secondAttribute="centerX" id="Ggg-9F-Mey"/>
+                            <constraint firstItem="oHq-iL-7DC" firstAttribute="top" secondItem="j1E-eL-MDp" secondAttribute="bottom" constant="19" id="IlU-MM-ccc"/>
+                            <constraint firstItem="exi-vD-3os" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="105" id="JHt-9N-MO8"/>
+                            <constraint firstItem="exi-vD-3os" firstAttribute="top" secondItem="oHq-iL-7DC" secondAttribute="bottom" constant="34" id="KGc-2S-STN"/>
+                            <constraint firstItem="06u-8c-E5O" firstAttribute="top" secondItem="Xao-e4-TLM" secondAttribute="bottom" constant="94" id="Rhe-PO-Cig"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="06u-8c-E5O" secondAttribute="bottom" constant="112" id="Vqv-W1-QWo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="j1E-eL-MDp" secondAttribute="trailing" constant="81" id="ben-Dj-6nb"/>
+                            <constraint firstItem="oHq-iL-7DC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="76" id="pA4-pQ-0ds"/>
+                            <constraint firstItem="j1E-eL-MDp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="81" id="vw7-MV-GYT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="exi-vD-3os" secondAttribute="trailing" constant="105" id="xYY-PA-oym"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="beerButton" destination="06u-8c-E5O" id="bhB-0E-yI0"/>
